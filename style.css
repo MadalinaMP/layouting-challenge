@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial Nova";
+}
+
+header {
+    height: 40px;
+    min-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-top: 5px solid limegreen;
+    box-shadow: 0px 0px 20px rgb(185, 185, 185);
+}
+
+.left-section { 
+    display: flex;
+}
+
+.left-section .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+
+.left-section nav {
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    display: flex;
+}
+
+.left-section nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    min-height: 60px;
+}
+
+.left-section nav a:hover {
+    background-color: limegreen;
+    color: white;
+    cursor: pointer;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    width: 350px;
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+}
+
+.phone::before { 
+    content: url(src/phone.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 500px;
+}
+
+article {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.616);
+    padding: 30px;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px limegreen;
+    cursor: pointer;
+}
+
+svg {
+    color: rgb(76, 76, 158);
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: rgb(117, 117, 117);
+    font-size: 13px;
+    text-align: center;
+}
